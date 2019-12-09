@@ -50,8 +50,8 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-size: 1.125rem;
   font-family: Ubuntu, sans-serif;
-  font-size: 1em;
   float: right;
   width: 100%;
 }
@@ -76,6 +76,7 @@ li {
 
 nav a {
   width: 25%;
+  white-space: nowrap;
   color: #6c8fe0;
 }
 
@@ -110,128 +111,130 @@ nav a {
     font-weight: normal;
   }
 
-  @media only screen and (min-width: 38em) {
+}
 
-    html {
-      font-size: 110%;
-      line-height: 1.4;
-    }
+@media only screen and (min-width: 38em) {
 
-    nav ul {
-      display: flex;
-      flex-wrap: nowrap;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      margin-left: 5rem;
-      font-family: Ubuntu, sans-serif;
-      font-size: 1em;
-      float: right;
-      width: 100%;
-    }
-
-    nav a:hover {
-      color: #fff;
-      background-color: #6c8fe0;
-    }
-
-    li {
-      display: inline-block;
-      font-family: Ubuntu, sans-serif;
-      text-align: center;
-      width: 100%;
-      background-color: #18294f;
-      color: #6c8fe0;
-      padding: .5em 0;
-      list-style-type: none;
-      text-decoration: none;
-      font-weight: normal;
-    }
-
-    nav a {
-      width: 25%;
-      color: #6c8fe0;
-    }
-
+  html {
+    font-size: 110%;
+    line-height: 1.4;
   }
 
-  @media only screen and (min-width: 60em) {
-
-    html {
-      font-size: 120%;
-      line-height: 1.5;
-    }
-
-    header {
-      position: relative;
-      display: block;
-      justify-content: flex-start;
-      background-color: #18294f;
-      list-style-type: none;
-      color: #fff;
-      width: 100%;
-      padding: .5rem 0;
-    }
-
-    li a:hover {
-      background-color: #6c8fe0;
-      color: #fff;
-    }
-
-    header h1 {
-      display: inline-block;
-      text-align: left;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      font-weight: bold;
-      margin-bottom: 0;
-      width: 28%;
-    }
-
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      font-family: Ubuntu, sans-serif;
-      font-size: 1em;
-      width: 70%;
-    }
-
-    nav a:hover {
-      color: #fff;
-      background-color: #6c8fe0;
-    }
-
-    li {
-
-      display: inline-block;
-      font-family: Ubuntu, sans-serif;
-      text-align: center;
-      width: 25%;
-      background-color: #18294f;
-      color: #6c8fe0;
-      padding: .5em 0;
-      list-style-type: none;
-      text-decoration: none;
-      flex-direction: row;
-      font-weight: normal;
-    }
-
-    nav a {
-      width: 25%;
-      color: #6c8fe0;
-    }
-
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 5rem;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1em;
+    float: right;
+    width: 100%;
   }
 
-  @media only screen and (min-width: 90em) {
-
-    html {
-      font-size: 130%;
-    }
-
+  nav a:hover {
+    color: #fff;
+    background-color: #6c8fe0;
   }
+
+  li {
+    display: inline-block;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    width: 100%;
+    background-color: #18294f;
+    color: #6c8fe0;
+    padding: .5em 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  nav a {
+    width: 25%;
+    color: #6c8fe0;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header {
+    position: relative;
+    display: block;
+    justify-content: flex-start;
+    background-color: #18294f;
+    list-style-type: none;
+    color: #fff;
+    width: 100%;
+    padding: .5rem 0;
+  }
+
+  li a:hover {
+    background-color: #6c8fe0;
+    color: #fff;
+  }
+
+  header h1 {
+    display: inline-block;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: bold;
+    margin-bottom: 0;
+    width: 28%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1em;
+    width: 70%;
+  }
+
+  nav a:hover {
+    color: #fff;
+    background-color: #6c8fe0;
+  }
+
+  li {
+
+    display: inline-block;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    width: 25%;
+    background-color: #18294f;
+    color: #6c8fe0;
+    padding: .5em 0;
+    list-style-type: none;
+    text-decoration: none;
+    flex-direction: row;
+    font-weight: normal;
+  }
+
+  nav a {
+    width: 25%;
+    color: #6c8fe0;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+}
